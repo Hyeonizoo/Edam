@@ -1145,14 +1145,22 @@ article .logo {
   line-height: 125%;
 }
 
-#design section[class^=design] .logoAni {
-  width: 100%;
+#design .design1 .logoAni {
+  width: calc(100vw * 1553 / 1920);
   height: calc(100vw * 280 / 1920);
+  background-image: url("../img/logo01.png");
+  background-size: cover;
 }
-
 /* Design --------------------------------------------- design2 */
 #design section[class^=design] {
   display: flow-root;
+}
+#design .design2 #namingBox .logoAni {
+  width: calc(100vw * 1302 / 1920);
+  height: calc(100vw * 193 / 1920);
+  margin: 0 auto;
+  background-image: url("../img/logo02.png");
+  background-size: cover;
 }
 #design .design2 #namingBox #naming {
   float: right;
