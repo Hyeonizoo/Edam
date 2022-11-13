@@ -1,0 +1,2182 @@
+.inner {
+  padding: 0;
+  padding-left: calc(100vw * 182 / 1920);
+  padding-right: calc(100vw * 182 / 1920);
+}
+
+.clear {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+:root {
+  --green: #007A40;
+  --darkGreen: #004826;
+  --black: #353535;
+  --gray: #ADADAD;
+  --deepBeige: #CCC9C8;
+  --beige: #ECE9E7;
+  --ivory: #F5F2F0;
+}
+
+body {
+  overflow-x: hidden;
+  letter-spacing: 0.015em;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  transition: All 0.5s ease-in-out;
+  -webkit-transition: All 0.5s ease-in-out;
+  -moz-transition: All 0.5s ease-in-out;
+  -o-transition: All 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+header nav {
+  line-height: 70px;
+  font-size: 20px;
+}
+
+header h1 {
+  float: left;
+  position: absolute;
+}
+
+header h1 span {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-right: 15px;
+}
+
+header h1 a,
+h1 a:visited {
+  color: var(--black);
+}
+
+header h1 img {
+  width: 63.36px;
+  height: 32px;
+  position: relative;
+  top: 3px;
+}
+
+header h2 {
+  display: inline-block;
+  color: var(--deepBeige);
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 190px;
+  font-weight: 400;
+}
+
+header #gnb {
+  display: flex;
+  float: right;
+}
+
+header #gnb li {
+  margin-left: calc(100vw * 60 / 1920);
+}
+
+header #gnb a,
+#gnb a:visited {
+  color: var(--green);
+}
+
+#mainIntro {
+  width: 100%;
+  background-color: #fff;
+}
+
+
+#mainIntro #introLogoBg {
+  position: absolute;
+  width: 100%;
+  height: calc(100vw * 1080 / 1920);
+  background-color: var(--green);
+  overflow: hidden;
+}
+
+#mainIntro #horizontal_wrap {
+  z-index: 1;
+  color: var(--green);
+  display: flex;
+  font-size: calc(100vw * 128 / 1920);
+  font-weight: 800;
+  white-space: nowrap;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -155%;
+  animation: sloganMove 4.5s ease-in forwards;
+}
+
+@keyframes sloganMove {
+  0% {
+    left: 35%;
+  }
+
+  80% {
+    left: -90%;
+  }
+
+  95% {
+    left: -90%;
+    font-size: calc(100vw * 128 / 1920);
+  }
+
+  100% {
+    font-size: 0;
+  }
+}
+
+#mainIntro #horizontal_wrap ul {
+  margin: 0 calc(100vw * 200 / 1920);
+}
+
+#mainIntro #horizontal_wrap li {
+  display: inline;
+  margin: 0 calc(100vw * 20 / 1920);
+  font-weight: 800;
+}
+
+#mainIntro #horizontal_wrap .strokeWord {
+  -webkit-text-stroke: calc(100vw * 3 / 1920) var(--green);
+  color: transparent;
+}
+
+#mainIntro #introLogoBg .arrowLine {
+  height: calc(100vw * 300 / 1920);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border-top-right-radius: calc(100vw * 150 /1920);
+  border-bottom-right-radius: calc(100vw * 150 /1920);
+  width: 0px;
+  width: calc(100vw * 2800 / 1920);
+  height: calc(100vw * 300 / 1920);
+  right: 105%;
+  animation: arrowMove 4.5s ease-in-out forwards;
+}
+
+@keyframes arrowMove {
+  0% {
+    right: 105%;
+  }
+
+  30% {
+    right: 15%;
+  }
+
+  95% {
+    right: 15%;
+    height: calc(100vw * 300 / 1920);
+  }
+
+  100% {
+    right: -45%;
+    height: calc(100vw * 1100 / 1920);
+  }
+}
+
+#mainIntro #introLogoBg .arrowLine::after {
+  content: "";
+  position: absolute;
+  width: calc(100vw * 1200 / 1920);
+  border-top-right-radius: calc(100vw * 150 /1920);
+  border-bottom-right-radius: calc(100vw * 150 /1920);
+  height: calc(100vw * 300 / 1920);
+  transform: rotate(45deg);
+  background-color: #fff;
+  top: calc(100vw * -318 / 1920);
+  right: calc(100vw * -133 / 1920);
+}
+
+
+
+
+
+
+
+
+
+
+
+#mainIntro #introLogoBox {
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: logo 1s 4.35s ease-in forwards;
+}
+
+@keyframes logo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+#mainIntro #introLogoBox {
+  width: 100%;
+  height: calc(100vw * 950 / 1920);
+  background-image: url("../img/main.png");
+  background-size: cover;
+}
+
+
+
+/* Planning --------------------------------------------- common */
+.section {
+  width: 100%;
+  height: calc(100vw * 1080 / 1920);
+}
+
+.centerBox {
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#planning .logo,
+article .logo {
+  width: calc(100vw * 273 / 1920);
+  height: calc(100vw * 138 / 1920);
+  background-image: url("../img/logo.svg");
+  background-size: cover
+}
+
+/* Planning --------------------------------------------- Background1 */
+#planning section[class^=background] h3 {
+  text-align: center;
+  font-weight: 600;
+  line-height: 140%;
+}
+#planning .background3 h3,
+.background4 h3,
+.background5 h3 {
+  font-size: calc(100vw * 48 / 1920);
+}
+
+#planning section[class^=background] .source {
+  font-size: calc(100vw * 15 / 1920);
+  font-weight: 400;
+  color: var(--deepBeige);
+  text-align: center;
+  margin-top: calc(100vw * 18 / 1920);
+}
+
+#planning section[class^=background] img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#planning .background1 h3 {
+  font-size: calc(100vw * 64 / 1920);
+  line-height: 125%;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+/* Planning --------------------------------------------- Background2 */
+#planning .background2 div[class^=bubble] {
+  background-size: cover;
+  position: relative;
+}
+
+#planning .background2 div[class^=bubble] p {
+  position: relative;
+}
+
+#planning .background2 .bubble1 p,
+.bubble2 div,
+.bubble3 p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#planning .background2 .bubble1 {
+  width: calc(100vw * 920 / 1920);
+  height: calc(100vw * 248 / 1920);
+  background-image: url("../img/bubble1.png");
+}
+
+#planning .background2 .bubble1 p {
+  margin-left: calc(100vw * 50 / 1920);
+  font-size: calc(100vw * 36 / 1920);
+  line-height: 140%;
+  width: max-content;
+}
+
+#planning .background2 .bubble2 {
+  width: calc(100vw * 682 / 1920);
+  height: calc(100vw * 224 / 1920);
+  background-image: url("../img/bubble2.png");
+  margin: calc(100vw * 50 / 1920) 0;
+}
+
+#planning .background2 .bubble2 div {
+  width: max-content;
+  margin-left: calc(100vw * 50 / 1920);
+}
+
+#planning .background2 .bubble2 p:first-child {
+  font-size: calc(100vw * 36 / 1920);
+}
+
+#planning .background2 .bubble2 p:nth-child(2) {
+  color: var(--gray);
+  margin: calc(100vw * 5 / 1920) 0 calc(100vw * 20 / 1920);
+  font-size: calc(100vw * 20 / 1920);
+}
+
+#planning .background2 .bubble2 p:last-child {
+  font-size: calc(100vw * 20 / 1920);
+  color: var(--black);
+}
+
+#planning .background2 .bubble3 {
+  width: calc(100vw * 719 / 1920);
+  height: calc(100vw * 127 / 1920);
+  background-image: url("../img/bubble3.png");
+  margin-left: calc(100vw * 650 / 1920);
+}
+
+#planning .background2 .bubble3 p {
+  color: #fff;
+  font-weight: 700;
+  font-size: calc(100vw * 40 / 1920);
+  text-align: center;
+}
+
+/* Planning --------------------------------------------- Background3 */
+#planning .background3 #graphBox01 {
+  width: calc(100vw * 1380 / 1920);
+  height: calc(100vw * 586 / 1920);
+}
+#planning .background3,
+.background4,
+.background5 {
+  background-color: #fbfbfb;
+}
+
+#planning .background3 h3,
+.background4 h3,
+.background5 h3 {
+  padding-top: calc(100vw * 80 / 1920);
+}
+
+/* Planning --------------------------------------------- Background4 */
+#planning .background4>div {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 나중에 jQuery 추가 */
+/* #planning .background4 #percent {
+  font-size: calc(100vw * 450 / 1920);
+  font-weight: 800;
+  color: var(--beige);
+  position: absolute;
+  width: max-content;
+  top: calc(100vw * 200 / 1920);
+  margin-left: calc(100vw * 520 / 1920);
+}
+#planning .background4 #percent span {
+  font-weight: 900;
+} */
+#planning .background4 #graphBox02 {
+  width: calc(100vw * 1807 / 1920);
+  height: calc(100vw * 700 / 1920);
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+/* Planning --------------------------------------------- Background5 */
+#planning .background5 #graphBox03 {
+  width: calc(100vw * 1015 / 1920);
+  height: calc(100vw * 554 / 1920);
+}
+
+/* Planning --------------------------------------------- Background6 */
+#planning .background6>div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#planning .background6 h3,
+.background6 p {
+  width: max-content;
+  margin: 0 auto;
+}
+
+#planning .background6 h3 {
+  color: var(--black);
+  font-size: calc(100vw * 36 / 1920);
+}
+
+#planning .background6 p {
+  font-size: calc(100vw * 128 / 1920);
+  font-weight: 600;
+  text-align: center;
+  margin-top: calc(100vw * 45 / 1920);
+  margin-bottom: calc(100vw * 115 / 1920);
+}
+
+#planning .background6 p strong {
+  color: var(--green);
+  font-weight: 800;
+}
+
+#planning .background6 .line {
+  width: calc(100vw * 1720 / 1920);
+  height: 0;
+  border-bottom: calc(100vw * 5 / 1920) solid var(--green);
+}
+
+#planning .background6 .line::after {
+  content: "";
+  width: calc(100vw * 150 / 1920);
+  height: calc(100vw * 150 / 1920);
+  border-top: calc(100vw * 5 / 1920) solid var(--green);
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  top: calc(100vw * 340 / 1920);
+  right: calc(100vw * 213 / 1920);
+  border-top-right-radius: calc(100vw * 5 / 1920);
+}
+/* Planning --------------------------------------------- Main -- common */
+#planning section[class^=main]:not(.main5) {
+  height: calc(100vw * 1350 / 1920);
+}
+
+#planning section[class^=main] h3,
+#planning section[class^=main] h4,
+#services h3,
+#services h4 {
+  text-align: center;
+}
+
+#planning section[class^=main] h3,
+#design section[class^=design] h3,
+#services h3 {
+  font-size: calc(100vw * 40 / 1920);
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: calc(100vw * 20 / 1920);
+}
+
+#planning section[class^=main] h4,
+#design section[class^=design] h4,
+#services h4 {
+  font-size: calc(100vw * 72 / 1920);
+  font-weight: 600;
+}
+
+#planning section[class^=main] h4,
+#services h4 {
+  margin-bottom: calc(100vw * 70 / 1920);
+}
+
+/* Planning --------------------------------------------- Main1 */
+#planning .main1 #approachBox {
+  width: max-content;
+  position: relative;
+  margin: 0 auto;
+}
+
+#planning .main1 .approach {
+  display: inline-block;
+  top: 0;
+}
+
+#planning .main1 .approach h5 {
+  font-size: calc(100vw * 20 / 1920);
+  font-weight: 600;
+  color: #fff;
+}
+
+#planning .main1 .approach p {
+  font-size: calc(100vw * 30 / 1920);
+  font-weight: 600;
+}
+
+#planning .main1 .approach:nth-child(2) {
+  margin: 0 calc(100vw * 100 / 1920);
+}
+
+#planning .main1 .approach .painPointBox {
+  color: var(--black);
+}
+
+#planning .main1 .approach h5 {
+  color: var(--ivory);
+  width: max-content;
+}
+
+#planning .main1 .approach .painPointBox .painPoint {
+  background-color: #46443F;
+  padding: calc(100vw * 10 / 1920) calc(100vw * 25 / 1920);
+  border-radius: calc(100vw * 25 / 1920);
+}
+
+#planning .main1 .approach .painPointBox p {
+  margin: calc(100vw * 20 / 1920) 0 calc(100vw * 45 / 1920);
+}
+
+#planning .main1 .approach .solutionContainer .solutionBox {
+  width: calc(100vw * 446 / 1920);
+  height: calc(100vw * 282 / 1920);
+  color: #fff;
+  background-size: cover;
+}
+
+#planning .main1 .approach .solutionContainer .solutionBox h5 {
+  background-color: var(--green);
+  padding: calc(100vw * 10 / 1920) calc(100vw * 32 / 1920);
+  position: relative;
+  top: calc(100vw * 55 / 1920);
+  border-top-right-radius: calc(100vw * 25 / 1920);
+  border-bottom-right-radius: calc(100vw * 25 / 1920);
+}
+
+#planning .main1 .approach .solutionContainer .solutionBox p {
+  width: calc(100vw * 245 / 1920);
+  padding-top: calc(100vw * 70 / 1920);
+  padding-left: calc(100vw * 65 / 1920);
+  line-height: 125%;
+  font-size: calc(100vw * 24 / 1920);
+}
+
+#planning .main1 .approach .solutionContainer>p {
+  font-size: calc(100vw * 20 / 1920);
+  color: var(--black);
+  width: calc(100vw * 460 / 1920);
+  line-height: 140%;
+  margin-top: calc(100vw * 30 / 1920);
+}
+
+#planning .main1 .approach:nth-child(1) .solutionContainer>p {
+  width: calc(100vw * 430 / 1920);
+}
+
+#planning .main1 .approach:nth-child(1) .solutionContainer .solutionBox {
+  background-image: url("../img/approach01.png");
+}
+
+#planning .main1 .approach:nth-child(2) .solutionContainer .solutionBox {
+  background-image: url("../img/approach02.png");
+}
+
+#planning .main1 .approach:nth-child(3) .solutionContainer .solutionBox {
+  background-image: url("../img/approach03.png");
+}
+
+#planning .main1 .approach .solutionContainer>p strong {
+  font-weight: 700;
+  color: var(--green)
+}
+
+/* Planning --------------------------------------------- Main2 */
+#planning .main2 {
+  overflow: hidden;
+}
+
+#planning .main2 #structureBox {
+  margin-top: calc(100vw * 100 / 1920);
+}
+
+#planning .main2 div[class^=structure0] {
+  width: calc(100vw * 622 / 1920);
+  height: calc(100vw * 331 / 1920);
+  /* background-color: lightgreen; */
+  display: inline-block;
+  background-size: cover;
+  position: relative;
+}
+
+#planning .main2 .logo {
+  position: relative;
+  top: calc(100vw * -80 / 1920);
+}
+
+#planning .main2 .structure01 {
+  background-image: url("../img/structure01.png");
+}
+
+#planning .main2 .structure02 {
+  background-image: url("../img/structure02.png");
+}
+
+#planning .main2 div[class^=structure0]>div {
+  width: max-content;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 calc(100vw * 90 / 1920);
+}
+
+#planning .main2 div[class^=structure0] p:nth-child(1) {
+  color: var(--ivory);
+  font-size: calc(100vw * 20 / 1920);
+}
+
+#planning .main2 div[class^=structure0] p:nth-child(2) {
+  color: #fff;
+  font-size: calc(100vw * 40 / 1920);
+  font-weight: 700;
+  margin-top: calc(100vw * 3 / 1920);
+}
+
+#planning .main2 .structure01 div {
+  float: right;
+}
+
+#planning .main2 .structure01 p {
+  text-align: right;
+}
+
+#planning .main2 .structure02 div {
+  float: left;
+}
+
+#planning .main2 .structureArrow {
+  width: calc(100vw * 110 / 1920);
+  height: 0;
+  border-bottom: calc(100vw * 2 / 1920) solid var(--darkGreen);
+  display: inline-block;
+  position: relative;
+  top: calc(100vw * -150 / 1920);
+  margin: 0 calc(100vw * 38 / 1920);
+}
+
+#planning .main2 .structureArrow::after {
+  content: "";
+  width: calc(100vw * 50 / 1920);
+  height: calc(100vw * 50 / 1920);
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  top: calc(100vw * -25 / 1920);
+}
+
+#planning .main2 .structureArrow:nth-child(2):after {
+  left: calc(100vw * 49 / 1920);
+  border-top: calc(100vw * 2 / 1920) solid var(--darkGreen);
+}
+
+#planning .main2 .structureArrow:nth-child(4):after {
+  left: calc(100vw * 11 / 1920);
+  border-bottom: calc(100vw * 2 / 1920) solid var(--darkGreen);
+}
+
+#planning .main2 .logo {
+  display: inline-block;
+}
+
+#planning .main2 #structureBox>p {
+  font-size: calc(100vw * 24 / 1920);
+  color: var(--black);
+  width: calc(100vw * 1450 / 1920);
+  margin: calc(100vw * 70 / 1920) auto 0;
+  line-height: 140%;
+}
+
+/* Planning --------------------------------------------- Main3 */
+#planning .main3 #personaContainer .personaBox {
+  position: relative;
+}
+
+#planning .main3 #personaContainer .personaBox ul[class^=persona0] {
+  width: calc(100vw * 308 / 1920);
+  height: calc(100vw * 644 / 1920);
+  display: inline-block;
+  margin: 0 calc(100vw * 56 / 1920);
+  background-size: cover;
+  padding: calc(100vw * 210 / 1920) 0 0 calc(100vw * 30 / 1920);
+}
+
+#planning .main3 #personaContainer .personaBox .persona01 {
+  background-image: url("../img/persona01.png");
+}
+
+#planning .main3 #personaContainer .personaBox .persona02 {
+  background-image: url("../img/persona02.png");
+}
+
+#planning .main3 #personaContainer .personaBox .persona03 {
+  background-image: url("../img/persona03.png");
+}
+
+#planning .main3 #personaContainer .personaBox .persona04 {
+  background-image: url("../img/persona04.png");
+}
+
+#planning .main3 #personaContainer .personaBox ul[class^=persona0] li:first-child {
+  display: inline-block;
+  font-size: calc(100vw * 36 / 1920);
+  font-weight: 600;
+  color: var(--black);
+}
+
+#planning .main3 #personaContainer .personaBox ul[class^=persona0] li:nth-child(2) {
+  display: inline-block;
+  font-size: calc(100vw * 16 / 1920);
+  color: var(--black);
+  margin-left: calc(100vw * 7 / 1920);
+}
+
+#planning .main3 #personaContainer .personaBox ul[class^=persona0] li:nth-child(3) {
+  display: inline-block;
+  padding: 2% 6%;
+  border-radius: calc(100vw * 20 / 1920);
+  position: relative;
+  top: calc(100vw * -5 / 1920);
+  left: calc(100vw * 45 / 1920);
+}
+
+#planning .main3 #personaContainer .personaBox ul[class^=persona0]:not(.persona04) li:nth-child(3) {
+  background-color: var(--green);
+  color: #fff;
+}
+
+#planning .main3 #personaContainer .personaBox .persona04 li:nth-child(3) {
+  border: calc(100vw * 1 / 1920) solid var(--green);
+  color: var(--green);
+}
+
+#planning .main3 #personaContainer .personaBox ul[class^=persona0] li:nth-child(4) {
+  width: calc(100vw * 155 / 1920);
+  height: 0;
+  border: calc(100vw * 1 / 1920) solid var(--deepBeige);
+  margin: calc(100vw * 8 / 1920) 0;
+}
+
+#planning .main3 #personaContainer .personaBox ul[class^=persona0] li:last-child {
+  font-size: calc(100vw * 20 / 1920);
+  font-weight: 600;
+  color: var(--black);
+}
+
+#planning .main3 #personaContainer .personaBox ul[class^=persona0] li:last-child strong {
+  color: var(--green);
+}
+
+#planning .main3 #personaContainer .personaContent {
+  display: inline-block;
+  margin: calc(100vw * 40 / 1920) calc(100vw * 50 / 1920) 0;
+}
+
+#planning .main3 #personaContainer .personaContent .need {
+  font-size: calc(100vw * 24 / 1920);
+  font-weight: 600;
+  color: var(--green);
+}
+
+#planning .main3 #personaContainer .personaContent .needLine {
+  width: calc(100vw * 320 / 1920);
+  height: 0;
+  border-bottom: calc(100vw * 3 / 1920) solid var(--beige);
+  margin: calc(100vw * 10 / 1920) 0 calc(100vw * 20 / 1920);
+}
+
+#planning .main3 #personaContainer .personaContent .needLine::after {
+  content: "";
+  width: calc(100vw * 35 / 1920);
+  height: calc(100vw * 35 / 1920);
+  border-bottom: calc(100vw * 3 / 1920) solid var(--beige);
+  display: inline-block;
+  transform: rotate(45deg);
+  position: relative;
+  top: calc(100vw * -42 / 1920);
+  right: calc(100vw * -302 / 1920);
+}
+
+#planning .main3 #personaContainer .personaContent li:last-child {
+  width: calc(100vw * 320 / 1920);
+  font-size: calc(100vw * 20 / 1920);
+}
+
+/* Planning --------------------------------------------- Main4 */
+#planning .main4 {
+  background-color: var(--ivory);
+}
+
+#planning .main4 .centerBox {
+  display: flow-root;
+}
+
+#planning .main4>div {
+  font-size: calc(100vw * 24 / 1920);
+  color: var(--darkGreen);
+  text-align: center;
+  position: relative;
+}
+
+#planning .main4 h5 {
+  margin-bottom: calc(100vw * 20 / 1920);
+}
+
+#planning .main4>div>div,
+.arrowBox {
+  margin: 0 calc(100vw * 24 / 1920);
+  float: left;
+}
+
+#planning .main4>div>div li {
+  height: calc(100vw * 200 / 1920);
+  height: calc(100vw * 185 / 1920);
+  border: calc(100vw * 0.5 / 1920) solid var(--darkGreen);
+  border-radius: calc(100vw * 55 / 1920);
+}
+#planning .main4 #needs li,
+.main4 #service li {
+  margin: calc(100vw * 23 / 1920) 0;
+}
+#planning .main4 p,
+.main4 ul {
+  height: calc(100vw * 600 / 1920);
+}
+
+#planning .main4 #target p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-weight: 700;
+  width: calc(100vw * 165 / 1920);
+  width: calc(100vw * 200 / 1920);
+  font-size: calc(100vw * 32 / 1920);
+  border: calc(100vw * 0.5 / 1920) solid var(--darkGreen);
+  border-radius: calc(100vw * 60 / 1920);
+  padding-right: 40%;
+}
+
+#planning .main4 #agree ul,
+.arrowBox {
+  margin-top: calc(100vw * 45 / 1920);
+}
+
+#planning .main4 #agree li {
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--green);
+  height: max-content;
+  padding: calc(100vw * 30 / 1920) calc(100vw * 60 / 1920);
+  position: absolute;
+  left: calc(100vw * 190 / 1920);
+}
+
+#planning .main4 #agree li:nth-child(1) {
+  top: calc(100vw * 320 / 1920);
+}
+
+#planning .main4 #agree li:nth-child(2) {
+  top: calc(100vw * 525 / 1920);
+}
+
+#planning .main4 #agree li:nth-child(3) {
+  top: calc(100vw * 735 / 1920);
+}
+#planning .main4 #needs li {
+  width: calc(100vw * 280 / 1920);
+  padding-top: 22%;
+}
+#planning .main4 .arrowBox {
+  padding-top: calc(100vw * 100 / 1920);
+  padding-top: calc(100vw * 80 / 1920);
+}
+
+
+#planning .main4 .arrowBox .arrow {
+  width: calc(100vw * 15 / 1920);
+  height: calc(100vw * 15 / 1920);
+  border-top: calc(100vw * 3 / 1920) solid var(--darkGreen);
+  border-right: calc(100vw * 3 / 1920) solid var(--darkGreen);
+  transform: rotate(45deg);
+  margin-bottom: calc(100vw * 200 / 1920);
+  margin-bottom: calc(100vw * 195 / 1920);
+}
+#planning .main4 #service li {
+  width: calc(100vw * 430 / 1920);
+  line-height: 160%;
+}
+
+#planning .main4 #service li:nth-child(1) {
+  padding: calc(100vw * 50 / 1920) calc(100vw * 90 / 1920);
+}
+
+#planning .main4 #service li:nth-child(2) {
+  padding: calc(100vw * 50 / 1920) calc(100vw * 60 / 1920);
+}
+
+#planning .main4 #service li:nth-child(3) {
+  padding: calc(100vw * 50 / 1920) calc(100vw * 35 / 1920);
+}
+
+#planning .main4 #service li strong {
+  font-size: calc(100vw * 32 / 1920);
+  font-weight: 700;
+  color: var(--darkGreen);
+}
+#planning .main4 #service li u {
+  padding-top: calc(100vw * 50 / 1920);
+  text-underline-position: under;
+  text-decoration-color: #F3AF00;
+  text-decoration-thickness: calc(100vw * 3.5 / 1920);
+}
+#planning .main4>div #effect li {
+  color: #fff;
+  width: calc(100vw * 330 / 1920);
+  width: calc(100vw * 300 / 1920);
+  border: calc(100vw * 0.5 / 1920) solid var(--darkGreen);
+  background-color: var(--green);
+  line-height: 125%;
+}
+
+#planning .main4>div #effect li:first-child {
+  border-radius: 50%;
+  height: calc(100vw * 330 / 1920);
+  height: calc(100vw * 300 / 1920);
+  padding: 32% 15%;
+}
+
+#planning .main4>div #effect li:last-child {
+  border-radius: calc(100vw * 5 / 1920) calc(100vw * 5 / 1920) 50% 50%;
+  height: calc(100vw * 290 / 1920);
+  margin-top: calc(100vw * 10 / 1920);
+  padding: 28% 11%;
+}
+
+/* Planning --------------------------------------------- Main5 */
+#planning .main5 {
+  height: calc(100vw * 2200 / 1920);
+  padding-top: calc(100vw * 300 / 1920);
+}
+
+#planning .main5 h4 {
+  width: calc(100vw * 850 / 1920);
+  margin: 0 auto;
+}
+
+#planning .main5 .tabBox {
+  width: calc(100vw * 1555 / 1920);
+}
+
+#planning .main5 .tabBox .tabList {
+  font-size: calc(100vw * 24 / 1920);
+  display: flex;
+  position: relative;
+}
+
+#planning .main5 .tabBox .tabList li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vw * 55 / 1920);
+  border: calc(100vw * 1 / 1920) solid var(--gray);
+  box-sizing: content-box;
+}
+#planning .main5 .tabBox .tabList .tab1 {
+  padding: calc(100vw * 3 / 1920) 0 calc(100vw * 3 / 1920) calc(100vw * 40 / 1920);
+  margin-right: calc(100vw * 30 / 1920);
+  border-right: transparent;
+}
+
+#planning .main5 .tabBox .tabList .tab2 {
+  padding: calc(100vw * 3 / 1920) calc(100vw * 40 / 1920) calc(100vw * 3 / 1920) 0;
+  margin-left: calc(100vw * 30 / 1920);
+  position: absolute;
+  right: 0;
+  border-left: transparent;
+}
+
+#planning .main5 .tabBox .tabList li[class^=tab]:not(.active) {
+  color: var(--gray);
+  background-color: var(--beige);
+}
+
+#planning .main5 .tabBox .tabList .tab1:not(.active)::after,
+.tab2:not(.active)::before {
+  background-color: var(--beige);
+}
+
+#planning .main5 .tabBox .tabList .tab1::after {
+  content: "";
+  width: calc(100vw * 30 / 1920);
+  height: calc(100vw * 61 / 1920);
+  border: calc(100vw * 1 / 1920) solid var(--gray);
+  border-left: transparent;
+  transform: skew(25deg);
+  position: relative;
+  left: calc(100vw * 17 / 1920);
+}
+
+#planning .main5 .tabBox .tabList .tab2::before {
+  content: "";
+  width: calc(100vw * 30 / 1920);
+  height: calc(100vw * 61 / 1920);
+  border: calc(100vw * 1 / 1920) solid var(--gray);
+  border-right: transparent;
+  transform: skew(-25deg);
+  position: relative;
+  right: calc(100vw * 17 / 1920);
+}
+
+#planning .main5 .tabBox .tabList li:hover,
+.tabList li.active,
+.tabList .tab1:hover::after,
+.tabList .tab1.active::after,
+.tabList .tab2:hover::before,
+.tabList .tab2.active::before {
+  background-color: var(--green) !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+#planning .main5 .tabBox .contList {
+  position: relative;
+}
+
+#planning .main5 .tabBox .contList li {
+  display: none;
+  position: absolute;
+  width: calc(100vw * 1555 / 1920);
+  height: calc(100vw * 1193 / 1920);
+  border: calc(100vw * 1 / 1920) solid var(--darkGreen);
+}
+
+#planning .main5 .tabBox .contList li.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#planning .main5 .tabBox .contList li div[class^=ia] {
+  width: calc(100vw * 1204 / 1920);
+  height: calc(100vw * 1003 / 1920);
+  /* background-color: violet; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+}
+
+#planning .main5 .tabBox .contList li .ia01 {
+  background-image: url("../img/IA01.png");
+}
+
+#planning .main5 .tabBox .contList li .ia02 {
+  background-image: url("../img/IA02.png");
+}
+
+#planning .main5 .tabBox .contList li .ia03 {
+  background-image: url("../img/IA03.png");
+}
+
+#planning .main5 .tabBox .contList li .ia04 {
+  background-image: url("../img/IA04.png");
+}
+
+/* Video --------------------------------------------- Video */
+#video div {
+  width: 100%;
+  height: calc(100vw * 1080 / 1920);
+}
+
+#video div iframe {
+  width: 100%;
+  height: calc(100vw * 1080 / 1920);
+}
+
+/* Design --------------------------------------------- common */
+#design section[class^=design] {
+  padding: calc(100vw * 300 / 1920) 0;
+}
+
+#design section[class^=design] h3 {
+  color: var(--green);
+  font-size: calc(100vw* 40 / 1920);
+  font-weight: 700;
+}
+
+#design section[class^=design] h4 {
+  font-size: calc(100vw * 72 / 1920);
+  font-weight: 600;
+  margin-bottom: calc(100vw * 40 / 1920);
+}
+
+#design section[class^=design] p {
+  font-size: calc(100vw * 24 / 1920);
+}
+
+/* Design --------------------------------------------- design1 */
+#design .design1 {
+  width: 100%;
+}
+
+#design .design1 h3 {
+  font-size: calc(100vw * 128 / 1920) !important;
+  font-weight: 600;
+  color: var(--green);
+  margin-left: calc(100vw * 130 / 1920);
+  letter-spacing: -0.04em;
+  line-height: 125%;
+}
+
+#design section[class^=design] .logoAni {
+  width: 100%;
+  height: calc(100vw * 280 / 1920);
+}
+
+/* Design --------------------------------------------- design2 */
+#design section[class^=design] {
+  display: flow-root;
+}
+#design .design2 #namingBox #naming {
+  float: right;
+  margin-top: calc(100vw * 10 / 1920);
+}
+
+#design .design2 #namingBox #naming p {
+  color: var(--black);
+  width: calc(100vw * 632 / 1920);
+  line-height: 140%;
+  text-align: justify;
+  margin-top: calc(100vw * 30 / 1920);
+}
+
+#design .design2 #colorBox {
+  float: right;
+  margin-top: calc(100vw * 270 / 1920);
+}
+
+#design .design2 #colorBox h5 {
+  font-size: calc(100vw * 24 / 1920);
+  margin: calc(100vw * 15 / 1920) 0;
+}
+
+#design .design2 #colorBox .colorImg1 {
+  width: calc(100vw * 899 / 1920);
+  height: calc(100vw * 761 / 1920);
+  background-color: var(--green);
+  display: inline-block;
+}
+
+#design .design2 #colorBox .colorImg1 div {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36%;
+  filter: brightness(0) invert(100%);
+}
+
+#design .design2 #colorBox .colorImg2 {
+  width: calc(100vw * 374 / 1920);
+  height: calc(100vw * 647 / 1920);
+  background-image: url("../img/colorImg.png");
+  background-size: cover;
+  display: inline-block;
+  margin-left: calc(100vw * 10 / 1920);
+  position: relative;
+  top: calc(100vw * -114 / 1920);
+}
+
+/* Design --------------------------------------------- design3 */
+#design .design3>div {
+  width: max-content;
+  float: left;
+}
+
+#design .design3>div>p {
+  color: var(--black);
+  line-height: 140%;
+  width: calc(100vw * 500 / 1920);
+}
+
+#design .design3 .keywordContainer {
+  width: max-content;
+  float: right;
+}
+
+#design .design3 .keywordContainer:nth-child(2) {
+  color: var(--green);
+}
+
+#design .design3 .keywordContainer:nth-child(3) {
+  color: #fff;
+  margin: calc(100vw * 50 / 1920) calc(100vw * 450 / 1920) 0 0;
+}
+
+#design .design3 .keywordContainer div[class^=keywordBox] {
+  height: calc(100vw * 430 / 1920);
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+}
+
+#design .design3 .keywordContainer .keywordBox01 {
+  width: calc(100vw * 430 / 1920);
+}
+
+#design .design3 .keywordContainer:nth-child(2) .keywordBox01 {
+  background-image: url("../img/keyword01.png");
+}
+
+#design .design3 .keywordContainer:nth-child(2) .keywordBox02 {
+  background-image: url("../img/keyword02.png");
+}
+
+#design .design3 .keywordContainer .keywordBox02 {
+  width: calc(100vw * 410 / 1920);
+  margin-left: calc(100vw * 17 / 1920);
+}
+
+#design .design3 .keywordContainer:nth-child(3) .keywordBox01 {
+  background-image: url("../img/keyword03.png");
+}
+
+#design .design3 .keywordContainer:nth-child(3) .keywordBox02 {
+  background-image: url("../img/keyword04.png");
+}
+
+#design .design3 .keywordContainer div[class^=keywordBox] h5,
+.design3 div[class^=keywordBox] p {
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  top: calc(100vw * 320 / 1920);
+}
+
+#design .design3 .keywordContainer div[class^=keywordBox] h5 {
+  font-size: calc(100vw * 36 / 1920);
+}
+
+#design .design3 .keywordContainer div[class^=keywordBox] p {
+  font-size: calc(100vw * 24 / 1920);
+  line-height: 100%;
+}
+
+#design .design3 .keywordContainer .keywordBox02 h5,
+.keywordBox02 p {
+  left: -4%;
+}
+
+/* Design --------------------------------------------- design4 */
+#design .design4 {
+  position: relative;
+}
+
+#design .design4 #typoImg {
+  width: calc(100vw * 688 / 1920);
+  height: calc(100vw * 513 / 1920);
+  background-image: url("../img/typoImg.png");
+  background-size: cover;
+  float: left;
+}
+#design .design4>div {
+  display: flow-root;
+}
+#design .design4 .typoContainer01 {
+  float: right;
+}
+
+#design .design4 ul[class^=typoBox] {
+  width: max-content;
+}
+
+#design .design4 .typoContainer01 .typoBox01 {
+  font-size: calc(100vw * 126 / 1920);
+  color: var(--darkGreen);
+  line-height: 112%;
+}
+
+#design .design4 .typoContainer01 .typoBox01 li:first-child,
+.typoBox03 li:first-child {
+  /* background-color: red; */
+  font-weight: 400;
+}
+
+#design .design4 .typoContainer01 .typoBox01 li:last-child,
+.typoBox03 li:last-child {
+  /* background-color: tomato; */
+  font-weight: 600;
+}
+
+#design .design4 .typoContainer01 p {
+  display: block;
+  /* border: 1px solid red; */
+  /* float: right; */
+  width: calc(100vw * 600 / 1920);
+  margin-top: calc(100vw * 95 / 1920);
+  line-height: 140%;
+}
+
+#design .design4 .typoContainer02 {
+  /* background-color: bisque; */
+  /* margin-left: calc(100vw * 740 / 1920); */
+  margin: calc(100vw * 200 / 1920) 0 0 calc(100vw * 740 / 1920);
+}
+
+#design .design4 .typoContainer02 .typoBox02 {
+  /* border: 1px solid red; */
+  font-size: calc(100vw * 20 / 1920);
+  color: var(--black);
+  float: left;
+  margin-top: calc(100vw * 35 / 1920);
+  /* display: inline-block; */
+}
+
+#design .design4 .typoContainer02 .typoBox02 li:nth-child(2) {
+  margin: calc(100vw * 113 / 1920) 0;
+}
+
+#design .design4 .typoContainer02 .typoBox03 {
+  /* border: 1px solid blue; */
+  font-size: calc(100vw * 82 / 1920);
+  color: var(--green);
+  float: left;
+  margin-left: calc(100vw * 21 / 1920);
+  /* display: inline-block; */
+}
+
+#design .design4 .typoContainer02 .typoBox03 li:nth-child(2) {
+  margin: calc(100vw * 40 / 1920) 0;
+}
+
+/* Service --------------------------------------------- common */
+#services div[class^=app0] {
+  width: calc(100vw * 344 / 1920);
+  height: calc(100vw * 724.79 / 1920);
+  /* background-color: tomato; */
+  background-size: cover;
+}
+
+#services h5 {
+  font-size: calc(100vw * 40 / 1920);
+  font-weight: 700;
+  color: var(--green);
+  line-height: 125%;
+}
+
+#services h5~p {
+  font-size: calc(100vw * 24 / 1920);
+  color: var(--black);
+  line-height: 140%;
+  margin-top: calc(100vw * 20 / 1920);
+}
+
+#services .service2 section[class^=service2-] .stepIcon {
+  color: var(--green);
+  font-size: calc(100vw * 20 / 1920);
+  width: max-content;
+  border: calc(100vw * 1 / 1920) solid var(--green);
+  border-radius: calc(100vw * 1 / 1920) calc(100vw * 55 / 1920) calc(100vw * 55 / 1920) calc(100vw * 1 / 1920);
+  padding: 2.6% 1%;
+  display: inline-block;
+}
+
+#services .service2 section[class^=service2-] .stepIcon div {
+  font-weight: 700;
+}
+
+#services .service2 .service2-3 .textBox,
+.service2-4 .textBox,
+.service2-5 .textBox {
+  /* background-color: yellow; */
+  display: inline-block;
+  position: absolute;
+  margin-left: calc(100vw * 25 / 1920);
+}
+
+/* Service --------------------------------------------- service1 */
+#services {
+  padding-top: 20%;
+}
+#services .service1 {
+  position: relative;
+  padding-bottom: calc(100vw * 200 / 1920);
+}
+
+#services .service1 #onboardingImg div:not(#onboardingImg div:last-child) {
+  /* display: flex; */
+  display: inline-block;
+  height: calc(100vw * 259 / 1920);
+}
+
+#services .service1 #onboardingImg div:first-child {
+  width: 23%;
+  background-image: url("../img/onboard01.png");
+  background-size: cover;
+}
+
+#services .service1 #onboardingImg div:nth-child(2) {
+  width: 54%;
+  background-image: url("../img/onboard04.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#services .service1 #onboardingImg div:nth-child(3) {
+  width: 23%;
+  background-image: url("../img/onboard03.png");
+  background-size: cover;
+  background-position-x: 60%;
+}
+
+#services .service1 #onboardingImg div:last-child {
+  width: 100%;
+  height: calc(100vw * 314 / 1920);
+  background-image: url("../img/onboard02.png");
+  background-size: cover;
+  position: relative;
+  top: calc(100vw * -5 / 1920);
+}
+
+#services .service1 .app01 {
+  background-image: url("../img/app01.gif");
+  position: absolute;
+  top: calc(100vw * 50 / 1920);
+  left: 23%;
+  border-radius: calc(100vw * 46 / 1920);
+}
+
+#services .service1 .textBox {
+  width: calc(100vw * 470 / 1920);
+  position: absolute;
+  top: 40%;
+  left: 51%;
+}
+
+/* Service --------------------------------------------- service2 */
+#services .service2 {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 100%;
+}
+
+/* Service --------------------------------------------- service2-1 */
+#services .service2 .service2-1 .textBox h5 {
+  width: calc(100vw * 400 / 1920);
+}
+
+#services .service2 .service2-1 .textBox p {
+  width: calc(100vw * 455 / 1920);
+}
+
+#services .service2 .service2-1 .stepContainer {
+  margin-top: calc(100vw * 75 / 1920);
+  width: max-content;
+  display: flex;
+}
+
+#services .service2 .service2-1 .stepContainer .bracket {
+  width: calc(100vw * 50 / 1920);
+  height: calc(100vw * 410 / 1920);
+  border: calc(100vw * 1 / 1920) solid var(--deepBeige);
+}
+
+#services .service2 .service2-1 .stepContainer .bracket:first-child {
+  border-right: transparent;
+}
+
+#services .service2 .service2-1 .stepContainer .bracket:last-child {
+  border-left: transparent;
+}
+#services .service2 .service2-1 .stepBox {
+  font-size: calc(100vw * 16 / 1920);
+  color: var(--green);
+  padding-top: calc(100vw * 35 / 1920);
+}
+
+#services .service2 .service2-1 .stepBox li div:first-child {
+  width: calc(100vw * 40 / 1920);
+  height: calc(100vw * 40 / 1920);
+  line-height: calc(100vw * 40 / 1920);
+  padding: calc(100vw * 8 / 1920);
+  text-align: center;
+  border-radius: 50%;
+  border: calc(100vw * 2 / 1920) solid var(--green);
+}
+
+#services .service2 .service2-1 .stepBox li div:last-child {
+  margin: calc(100vw * 5 / 1920) 0 calc(100vw * 45 / 1920);
+  text-align: center;
+}
+
+#services .service2 .service2-1 .stepBox li div.active {
+  background-color: var(--green);
+  color: #fff;
+}
+
+#services .service2 .service2-1 .stepText {
+  padding-top: calc(100vw * 30 / 1920);
+}
+
+#services .service2 .service2-1 .stepText li {
+  width: calc(100vw * 330 / 1920);
+  line-height: 140%;
+  font-size: calc(100vw * 20 / 1920);
+  color: var(--gray);
+  margin: calc(100vw * 7 / 1920) 0 calc(100vw * 35 / 1920) calc(100vw * 30 / 1920);
+}
+
+#services .service2 .service2-1 .stepText li.active {
+  color: var(--black);
+}
+
+#services .service2 .service2-1 .stepText li:not(.stepText li:last-child)::after {
+  content: "";
+  display: block;
+  width: calc(100vw * 330 / 1920);
+  height: 0;
+  border-bottom: calc(100vw * 1 / 1920) solid var(--deepBeige);
+  margin-top: calc(100vw * 38 / 1920);
+}
+
+#services .service2 .service2-1 .appBox {
+  width: max-content;
+  position: absolute;
+  top: 6%;
+  right: calc(100vw * 182 / 1920);
+}
+
+#services .service2 .service2-1 .appBox div {
+  display: inline-block;
+  margin-left: calc(100vw * 100 / 1920);
+}
+
+#services .service2 .service2-1 .appBox .app02 {
+  background-image: url("../img/app02-0.png");
+}
+#services .service2 .service2-1 .appBox .app03 {
+  background-image: url("../img/app03.png");
+}
+
+/* Service --------------------------------------------- service2-2 */
+#services .service2 .service2-2 {
+  background-color: var(--ivory);
+  margin: calc(100vw * 200 / 1920) 0 calc(100vw * 230 / 1920) 0;
+}
+
+#services .service2 .service2-2 .inner {
+  position: relative;
+}
+
+#services .service2 .service2-2 .inner #customized {
+  color: var(--green);
+  font-size: calc(100vw * 32 / 1920);
+  font-weight: 700;
+  border: calc(100vw * 1 / 1920) solid var(--green);
+  border-radius: calc(100vw * 1 / 1920) calc(100vw * 55 / 1920) calc(100vw * 55 / 1920) calc(100vw * 1 / 1920);
+  padding: 1.2%;
+  position: absolute;
+  top: calc(100vw * 120 / 1920);
+}
+
+#services .service2 .service2-2 #buttonBox {
+  width: max-content;
+  display: inline-block;
+  margin-top: 25%;
+}
+
+#services .service2 .service2-2 #buttonBox input[type=radio] {
+  display: block;
+  width: calc(100vw * 85 / 1920);
+  height: calc(100vw * 85 / 1920);
+  border-radius: 50%;
+  border: calc(100vw * 2 / 1920) solid var(--green);
+  color: var(--green);
+  font-size: calc(100vw * 24 / 1920);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  top: calc(100vw * 18 / 1920);
+}
+
+#services .service2 .service2-2 #buttonBox input[type=radio]:hover {
+  background-color: var(--green);
+}
+
+#services .service2 .service2-2 #buttonBox input[type=radio]:hover+label {
+  color: #fff;
+}
+
+#services .service2 .service2-2 #buttonBox input[type=radio]:checked {
+  background-color: var(--green);
+}
+
+#services .service2 .service2-2 #buttonBox label {
+  color: var(--green);
+  font-size: calc(100vw * 24 / 1920);
+  position: relative;
+  top: calc(100vw * -38 / 1920);
+  left: calc(100vw * 20 / 1920);
+  cursor: pointer;
+}
+
+#services .service2 .service2-2 #buttonBox input[type=radio]:checked+label {
+  color: #fff;
+}
+
+#services .service2 .service2-2 #buttonBox div {
+  font-size: calc(100vw * 24 / 1920);
+  color: var(--green);
+  text-align: center;
+  margin-bottom: calc(100vw * 55 / 1920);
+  position: relative;
+}
+
+#services .service2 .service2-2 ul {
+  display: inline-block;
+  position: absolute;
+  top: 12%;
+  right: calc(100vw * 182 / 1920);
+}
+
+#services .service2 .service2-2 ul li {
+  display: inline-block;
+}
+
+#services .service2 .service2-2 ul li.arrow2 {
+  width: calc(100vw * 50 / 1920);
+  height: 0;
+  border: calc(100vw * 1 / 1920) solid var(--green);
+  position: relative;
+  top: calc(100vw * 420 / 1920);
+  margin: 0 calc(100vw * 30 / 1920);
+}
+
+#services .service2 .service2-2 ul li.arrow2::after {
+  content: "";
+  width: calc(100vw * 15 / 1920);
+  height: calc(100vw * 15 / 1920);
+  display: inline-block;
+  transform: rotate(45deg);
+  border-top: calc(100vw * 2 / 1920) solid var(--green);
+  position: relative;
+  top: calc(100vw * -9 / 1920);
+  left: calc(100vw * 30 / 1920);
+}
+
+#services .service2 .service2-2 ul li h6 {
+  font-size: calc(100vw * 20 / 1920);
+  color: var(--black);
+  text-align: center;
+  line-height: 200%;
+  margin-bottom: calc(100vw * 35 / 1920);
+}
+
+#services .service2 .service2-2 ul li h6 strong {
+  font-size: calc(100vw * 32 / 1920);
+  font-weight: 600;
+  color: var(--green);
+  display: block;
+}
+
+/* 나중에 jQuery로 수정 */
+#services .service2 .service2-2 ul li .app04 {
+  background-image: url("../img/app04.png");
+}
+
+#services .service2 .service2-2 ul li .app04.move {
+  background-image: url("../img/app04.gif");
+}
+
+#services .service2 .service2-2 ul li .app05 {
+  background-image: url("../img/app05.png");
+}
+
+#services .service2 .service2-2 ul li .app05.move {
+  background-image: url("../img/app05.gif");
+}
+
+#services .service2 .service2-2 ul li .app06 {
+  background-image: url("../img/app06.png");
+}
+
+#services .service2 .service2-2 ul li .app06.move {
+  background-image: url("../img/app06.gif");
+}
+
+/* Service --------------------------------------------- service2-3 */
+#services .service2 .service2-3 {
+  padding-left: calc(100vw * 182 / 1920);
+  /* border: 1px solid blue; */
+  position: relative;
+  padding-bottom: 50%;
+}
+
+#services .service2 .service2-3 .textBox p {
+  width: calc(100vw * 300 / 1920);
+}
+
+#services .service2 .service2-3 #app07bg {
+  width: calc(100vw * 506 / 1920);
+  height: calc(100vw * 434 / 1920);
+  background-image: url("../img/story01.png");
+  position: absolute;
+  top: calc(100vw * 228 / 1920);
+}
+
+#services .service2 .service2-3 .app07 {
+  background-image: url("../img/app07.png");
+  position: absolute;
+  left: calc(100vw * 688 / 1920);
+}
+
+#services .service2 .service2-3 .app08 {
+  background-image: url("../img/app08.png");
+  position: absolute;
+  top: calc(100vw * -23 / 1920);
+  right: calc(100vw * 471 / 1920);
+  z-index: 1;
+}
+
+#services .service2 .service2-3 #app08Text1 p,
+#app08Text2 p {
+  font-weight: 400;
+}
+
+#services .service2 .service2-3 #app08Text1 {
+  font-size: calc(100vw * 14 / 1920);
+  /* font-weight: 400; */
+  color: var(--gray);
+  background-color: var(--ivory);
+  line-height: 170%;
+  width: calc(100vw * 240 / 1920);
+  padding: 3.1%;
+  position: absolute;
+  top: calc(100vw * 70 / 1920);
+  right: calc(100vw * 115 / 1920);
+}
+
+#services .service2 .service2-3 #app08Text1 p:last-child {
+  margin-top: calc(100vw * 30 / 1920);
+}
+
+#services .service2 .service2-3 #app08Text2 {
+  font-size: calc(100vw * 14 / 1920);
+  /* font-weight: 400; */
+  color: var(--gray);
+  background-color: var(--ivory);
+  padding: 1% 1% 1% 7%;
+  position: absolute;
+  top: calc(100vw * 380 / 1920);
+  right: calc(100vw * 65 / 1920);
+}
+
+#services .service2 .service2-3 #app08bg {
+  width: calc(100vw * 576 / 1920);
+  height: calc(100vw * 254 / 1920);
+  background-image: url("../img/story02.png");
+  position: absolute;
+  top: calc(100vw * 600 / 1920);
+  right: calc(100vw * 182 / 1920);
+}
+
+/* Service --------------------------------------------- service2-4 */
+#services .service2 .service2-4 {
+  overflow-x: hidden;
+}
+
+#services .service2 .service2-4 .stepIcon {
+  margin-left: calc(100vw * 182 / 1920);
+}
+
+#services .service2 .service2-4 #challengeBox {
+  /* background-color: yellow; */
+  width: 300%;
+  position: relative;
+  animation: challenge 9.7s infinite linear;
+  margin-top: calc(100vw * 40 / 1920);
+}
+
+@keyframes challenge {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-488px * 5))
+  }
+}
+
+#services .service2 .service2-4 #challengeBox li {
+  width: calc(100vw * 461 / 1920);
+  height: calc(100vw * 693 / 1920);
+  /* border: 1px solid blue; */
+  display: inline-block;
+  margin: 0 calc(100vw * 27 / 1920);
+  background-size: cover;
+}
+
+#services .service2 .service2-4 #challengeBox #chall1 {
+  background-image: url("../img/challenge01.png");
+}
+
+#services .service2 .service2-4 #challengeBox #chall2 {
+  background-image: url("../img/challenge02.png");
+}
+
+#services .service2 .service2-4 #challengeBox #chall3 {
+  background-image: url("../img/challenge03.png");
+}
+
+#services .service2 .service2-4 #challengeBox #chall4 {
+  background-image: url("../img/challenge04.png");
+}
+
+#services .service2 .service2-4 #challengeBox #chall5 {
+  background-image: url("../img/challenge05.png");
+}
+
+/* Service --------------------------------------------- service2-5 */
+#services .service2 .service2-5 {
+  /* background-color: lightblue; */
+  position: relative;
+  /* margin: 15% 0; */
+}
+
+#services .service2 .service2-5 #step3bg {
+  width: 100%;
+  height: calc(100vw * 897 / 1920);
+  background-color: var(--ivory);
+  border-radius: 0 calc(100vw * 420 / 1920) calc(100vw * 400 / 1920) 0;
+  margin: 15% 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#services .service2 .service2-5 .app09 {
+  background-image: url("../img/app09.png");
+  position: absolute;
+  top: calc(100vw * 760 / 1920);
+  left: calc(100vw * 325 / 1920);
+}
+
+#services .service2 .service2-5 .app010 {
+  background-image: url("../img/app10.png");
+  position: absolute;
+  top: calc(100vw * 615 / 1920);
+  left: calc(100vw * 755 / 1920);
+  background-size: contain !important;
+  background-repeat: no-repeat;
+}
+
+#services .service2 .service2-5 .app011 {
+  background-image: url("../img/app11.png");
+  position: absolute;
+  top: calc(100vw * 615 / 1920);
+  left: calc(100vw * 1180 / 1920);
+  background-size: contain !important;
+  background-repeat: no-repeat;
+}
+
+#services .service2 .service2-5 .stepIcon {
+  /* background-color: lightpink; */
+  position: absolute;
+  top: calc(100vw * 1335 / 1920);
+  left: calc(100vw * 755 / 1920);
+}
+
+#services .service2 .service2-5 .textBox {
+  /* background-color: lightgreen; */
+  position: absolute;
+  top: calc(100vw * 1340 / 1920);
+  left: calc(100vw * 880 / 1920);
+}
+
+/* Service --------------------------------------------- service3 */
+#services .service3 {
+  padding-bottom: 10%;
+}
+
+#services .service3 .textBox {
+  margin-left: calc(100vw * 182 / 1920);
+}
+
+#services .service3 .textBox p {
+  width: calc(100vw * 390 / 1920);
+}
+
+#services .service3 ul {
+  width: max-content;
+  position: relative;
+  top: calc(100vw * -60 / 1920);
+  margin-left: calc(100vw * 190 / 1920);
+  padding-bottom: 11%;
+}
+
+#services .service3 ul li {
+  display: inline-block;
+  font-size: calc(100vw * 24 / 1920);
+  font-weight: 300;
+  text-align: center;
+  color: var(--black);
+  margin: 0 calc(100vw * 28 / 1920);
+}
+
+#services .service3 ul li:first-child,
+.service3 ul li:nth-child(3) {
+  position: relative;
+  top: calc(100vw * 195 / 1920);
+}
+
+#services .service3 ul li .app009 {
+  background-image: url("../img/app09.png");
+}
+
+#services .service3 ul li .app012 {
+  background-image: url("../img/app12.png");
+}
+
+#services .service3 ul li .app013 {
+  background-image: url("../img/app13.png");
+}
+
+#services .service3 ul li .app014 {
+  background-image: url("../img/app14.png");
+}
+
+#services .service3 ul li p {
+  margin-top: calc(100vw * 15 / 1920);
+}
+
+/* Service --------------------------------------------- service4 */
+#services .service4 {
+  width: 100%;
+  height: calc(100vw * 2550 / 1920);
+  background-image: url("../img/serviceBg.png");
+  background-size: cover;
+  position: relative;
+  margin-bottom: 20%;
+  /* padding-bottom: 40%; */
+}
+
+#services .service4 .textBox {
+  margin-left: calc(100vw * 182 / 1920);
+}
+
+/* Service --------------------------------------------- service4-1 */
+#services .service4 .service4-1 {
+  padding-bottom: 50%;
+}
+
+#services .service4 .service4-1 .textBox {
+  width: calc(100vw * 480 / 1920);
+  /* background-color: yellow; */
+  padding-top: calc(100vw * 200 / 1920);
+}
+
+#services .service4 .service4-1 .app015 {
+  background-image: url("../img/app15.png");
+  position: absolute;
+  top: calc(100vw * 180 / 1920);
+  left: calc(100vw * 900 / 1920);
+}
+
+#services .service4 .service4-1 #hobby01 {
+  width: calc(100vw * 974 / 1920);
+  height: calc(100vw * 236 / 1920);
+  background-image: url("../img/hobby01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(100vw * 285 / 1920);
+  right: calc(100vw * 182 / 1920);
+}
+
+#services .service4 .service4-1 #hobby02 {
+  width: calc(100vw * 280 / 1920);
+  height: calc(100vw * 78 / 1920);
+  background-image: url("../img/hobby02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(100vw * 574 / 1920);
+  right: calc(100vw * 412 / 1920);
+}
+
+/* Service --------------------------------------------- service4-2 */
+#services .service4 .service4-2 {
+  position: relative;
+  padding-bottom: 40%;
+}
+
+#services .service4 .service4-2 .textBox {
+  width: calc(100vw * 380 / 1920);
+}
+
+#services .service4 .service4-2 div[class^=damsoContainer] {
+  position: absolute;
+}
+
+#services .service4 .service4-2 .damsoContainer01 {
+  top: calc(100vw * 160 / 1920);
+  left: calc(100vw * 420 / 1920);
+}
+
+#services .service4 .service4-2 .damsoContainer02 {
+  top: calc(100vw * 1070 / 1920);
+  left: calc(100vw * 182 / 1920);
+}
+
+#services .service4 .service4-2 .damsoContainer03 {
+  top: calc(100vw * 670 / 1920);
+  right: 0;
+}
+
+#services .service4 .service4-2 .damsoContainer01 .damso1 {
+  width: calc(100vw * 262 / 1920);
+  height: calc(100vw * 341 / 1920);
+  background-image: url("../img/damso01.png");
+  background-size: cover;
+}
+
+#services .service4 .service4-2 .damsoContainer02 .damso2 {
+  width: calc(100vw * 263 / 1920);
+  height: calc(100vw * 376 / 1920);
+  background-image: url("../img/damso02.png");
+  background-size: cover;
+}
+
+#services .service4 .service4-2 .app016 {
+  background-image: url("../img/app16.png");
+  position: absolute;
+  z-index: 1;
+  top: calc(100vw * 344 / 1920);
+  left: calc(100vw * 661 / 1920);
+}
+
+#services .service4 .service4-2 .damsoContainer03 .damso3 {
+  width: calc(100vw * 1213 / 1920);
+  height: calc(100vw * 592 / 1920);
+  background-image: url("../img/damso03.png");
+  background-size: cover;
+}
+
+#services .service4 .service4-2 div[class^=damsoContainer] p {
+  font-size: calc(100vw * 18 / 1920);
+  color: var(--gray);
+  margin-top: calc(100vw * 15 / 1920);
+}
+
+/* Service --------------------------------------------- service5 */
+#services .service5 .textBox {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+#services .service5 #inyeon {
+  width: 100%;
+  height: calc(100vw * 1080 / 1920);
+  background-image: url("../img/inyeon.png");
+  background-size: cover;
+}
+
+#services .service5 #inyeon>div {
+  /* border: 1px solid yellow; */
+  display: flex;
+  padding-top: 7.6%;
+  position: relative;
+}
+
+#services .service5 #inyeon .app017 {
+  background-image: url("../img/app17.png ");
+  /* display: inline-block; */
+  /* margin: 0 10%; */
+  margin-left: calc(100vw * 320 / 1920);
+  /* display: flex; */
+}
+
+#services .service5 #inyeon .app018 {
+  background-image: url("../img/app18.png");
+  margin-left: calc(100vw * 580 / 1920);
+  /* display: inline-block; */
+}
+
+#services .service5 #inyeon .arrow3 {
+  width: calc(100vw * 230 / 1920);
+  height: calc(100vw * 15 / 1920);
+  transform: skew(55deg);
+  border-top: calc(100vw * 5 / 1920) solid #fff;
+  border-bottom: calc(100vw * 5 / 1920) solid #fff;
+  /* display: inline-block; */
+  position: absolute;
+  top: calc(100vw * 500 / 1920);
+  left: calc(100vw * 855 / 1920);
+}
+
+#services .service5 #inyeon .arrow3::before {
+  content: "";
+  width: calc(100vw * 30 / 1920);
+  height: calc(100vw * 30 / 1920);
+  border-left: calc(100vw * 7 / 1920) solid #fff;
+  position: absolute;
+  top: calc(100vw * 20 / 1920);
+}
+
+#services .service5 #inyeon .arrow3::after {
+  content: "";
+  width: calc(100vw * 30 / 1920);
+  height: calc(100vw * 30 / 1920);
+  border-left: calc(100vw * 7 / 1920) solid #fff;
+  position: absolute;
+  top: calc(100vw * -30 / 1920);
+  right: calc(100vw * -37 / 1920);
+}
+
+/* article --------------------------------------------- slogan */
+article {
+  margin: 30% 0;
+}
+
+article .logo {
+  margin: 0 auto 3%;
+}
+
+article h3 {
+  font-size: calc(100vw * 96 / 1920);
+  font-weight: 600;
+  line-height: 140%;
+  width: calc(100vw * 930 / 1920);
+  text-align: center;
+  margin: 0 auto;
+}
+
+article h3 strong {
+  color: var(--green);
+}
+
+/* footer --------------------------------------------- end */
+footer div {
+  width: 100%;
+  height: calc(100vw * 1553 / 1920);
+  background-image: url("../img/footer.png");
+  background-size: cover;
+}
