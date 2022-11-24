@@ -26,7 +26,6 @@ body {
   overflow-x: hidden;
   letter-spacing: 0.015em;
 }
-
 header {
   width: 100%;
   height: 70px;
@@ -334,6 +333,7 @@ article .logo {
   height: calc(100vw * 224 / 1920);
   background-image: url("../img/bubble2.png");
   margin: calc(100vw * 50 / 1920) 0;
+  cursor: pointer;
 }
 
 #planning .background2 .bubble2 div {
@@ -489,7 +489,6 @@ article .logo {
   color: var(--green);
   margin-bottom: calc(100vw * 20 / 1920);
 }
-
 #planning section[class^=main] h4,
 #design section[class^=design] h4,
 #services h4 {
@@ -565,7 +564,8 @@ article .logo {
 }
 
 #planning .main1 .approach .solutionContainer .solutionBox p {
-  width: calc(100vw * 245 / 1920);
+  width: calc(100vw * 250 / 1920);
+  width: max-content;
   padding-top: calc(100vw * 70 / 1920);
   padding-left: calc(100vw * 65 / 1920);
   line-height: 125%;
@@ -575,13 +575,8 @@ article .logo {
 #planning .main1 .approach .solutionContainer>p {
   font-size: calc(100vw * 20 / 1920);
   color: var(--black);
-  width: calc(100vw * 460 / 1920);
   line-height: 140%;
   margin-top: calc(100vw * 30 / 1920);
-}
-
-#planning .main1 .approach:nth-child(1) .solutionContainer>p {
-  width: calc(100vw * 430 / 1920);
 }
 
 #planning .main1 .approach:nth-child(1) .solutionContainer .solutionBox {
@@ -671,7 +666,7 @@ article .logo {
   display: inline-block;
   position: relative;
   top: calc(100vw * -150 / 1920);
-  margin: 0 calc(100vw * 38 / 1920);
+  margin: 0 calc(100vw * 40 / 1920);
 }
 
 #planning .main2 .structureArrow::after {
@@ -1097,6 +1092,64 @@ article .logo {
 
 #planning .main5 .tabBox .contList li .ia04 {
   background-image: url("../img/IA04.png");
+}
+/* Planning --------------------------------------------- Main6 */
+/* #planning .main6 {
+  background-color: lightpink;
+} */
+#planning .main6 .serviceKwContainer {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background-color: yellow; */
+}
+#planning .main6 .serviceKwContainer p:first-child {
+  font-size: calc(100vw * 24 / 1920);
+  color: var(--green);
+  position: absolute;
+}
+#planning .main6 .serviceKwContainer .servicekw01 {
+  margin-left: calc(100vw * 1170 / 1920);
+}
+#planning .main6 .serviceKwContainer .servicekw02 {
+  margin-left: calc(100vw * 815 / 1920);
+}
+#planning .main6 .serviceKwContainer .servicekw03 {
+  margin-left: calc(100vw * 1035 / 1920);
+}
+#planning .main6 .serviceKwContainer p:last-child {
+  font-size: calc(100vw * 84 / 1920);
+  font-weight: 400;
+  color: #CCC9C8;
+  white-space: nowrap;
+  text-align: center;
+  line-height: calc(100vw * 160 / 1920);
+  /* margin-bottom: calc(100vw * 40 / 1920); */
+}
+#planning .main6 .serviceKwContainer p strong {
+  font-weight: 600;
+  color: var(--green);
+}
+#planning .main6 .serviceKwContainer .serviceKwBox:nth-child(2n-1) {
+  animation: leftGo 23s infinite linear forwards;  
+}
+#planning .main6 .serviceKwContainer .serviceKwBox:nth-child(2n) {
+  margin-left: -2300px;
+  animation: rightGo 23s infinite linear forwards;
+}
+@keyframes leftGo {
+  from {
+    margin-left: 0;
+  } to {
+    margin-left: -2300px;
+  }
+}
+@keyframes rightGo {
+  from {
+    margin-left: -2300px;
+  } to {
+    margin-left: 0;
+  }
 }
 
 /* Video --------------------------------------------- Video */
@@ -1820,7 +1873,7 @@ article .logo {
   /* background-color: yellow; */
   width: 300%;
   position: relative;
-  animation: challenge 9.7s infinite linear;
+  animation: challenge 15s infinite linear;
   margin-top: calc(100vw * 40 / 1920);
 }
 
