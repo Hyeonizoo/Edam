@@ -1253,6 +1253,7 @@ article .logo {
   height: calc(100vw * 761 / 1920);
   display: inline-block;
   background-image: url("../img/logo03.gif");
+  background-size: cover;
 }
 #design .design2 #colorBox .colorImg2 {
   width: calc(100vw * 374 / 1920);
