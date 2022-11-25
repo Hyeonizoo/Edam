@@ -66,6 +66,8 @@ $(document).ready(function(){
   $('input').click(function(){
     if($('#step1').is(':checked')){
         $('.app04').toggleClass('move');
+    }else {
+      $('.app04').removeClass('move');
     }
     // else{
     //     $('.app04').removeClass('move');
