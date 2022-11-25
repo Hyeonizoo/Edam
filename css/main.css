@@ -95,6 +95,7 @@ header #gnb a,
 #mainIntro {
   width: 100%;
   background-color: #fff;
+  padding-top: calc(100vw * 150 / 1920);
 }
 
 
