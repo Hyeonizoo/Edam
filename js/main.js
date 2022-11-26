@@ -17,8 +17,15 @@ $(document).ready(function(){
   });
 
   // popUp
+  const departArr = ["재무팀", "인사팀", "홍보팀", "디자인팀", "기획팀", "기술 지원팀", "개발팀", "영업팀"];
+  const rankArr = ["사장", "부사장", "전무", "상무", "부장", "차장", "과장", "대리", "사원"];
+  
   $('.bubble2').click(function(){
     $('.popUp').removeClass('hide');
+    const departChange = departArr[Math.floor(Math.random() * departArr.length)];
+    $('.department').text(departChange);
+    const rankChange = rankArr[Math.floor(Math.random() * rankArr.length)];
+    $('.rank').text(rankChange);
   })
   $('.popUp').click(function(){
     $(this).addClass('hide');
@@ -27,6 +34,8 @@ $(document).ready(function(){
   // name
   var yourName = prompt('당신의 이름은 무엇인가요?', '이담');
   $('#name').text(yourName);
+
+
 
   // tab
   const tabArray = ['1단계','2단계','3단계',];
@@ -67,7 +76,7 @@ $(document).ready(function(){
       box.eq(idx).addClass('active');
       text.eq(idx).addClass('active');
       img.css("background-image","url('./img/app02-"+idx+".png')");
-      console.log(idx);
+      // console.log(idx);
       idx++;
       if(idx >= box.length) idx= 0;
       for(i=0; i<3; i++);
