@@ -16,6 +16,18 @@ $(document).ready(function(){
     // console.log(scrollY);
   });
 
+  // popUp
+  $('.bubble2').click(function(){
+    $('.popUp').removeClass('hide');
+  })
+  $('.popUp').click(function(){
+    $(this).addClass('hide');
+  })
+
+  // name
+  var yourName = prompt('당신의 이름은 무엇인가요?', '이담');
+  $('#name').text(yourName);
+
   // tab
   const tabArray = ['1단계','2단계','3단계',];
   const selectArray = ['1단계 | 퇴직자 후유증 심각단계','2단계 | 퇴직자 후유증 경미단계','3단계 | 퇴직자 후유증 극복단계'];
@@ -69,9 +81,6 @@ $(document).ready(function(){
     }else {
       $('.app04').removeClass('move');
     }
-    // else{
-    //     $('.app04').removeClass('move');
-    // }
     if($('#step2').is(':checked')){
       $('.app05').addClass('move');
     }else{
@@ -82,5 +91,5 @@ $(document).ready(function(){
     }else{
         $('.app06').removeClass('move');
     }
-})
+  })
 });
