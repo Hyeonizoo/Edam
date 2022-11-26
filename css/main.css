@@ -169,7 +169,18 @@ header #gnb a,
   right: 105%;
   animation: arrowMove 4.5s ease-in-out forwards;
 }
-
+#mainIntro #introLogoBg .arrowLine::after {
+  content: "";
+  position: absolute;
+  width: calc(100vw * 1200 / 1920);
+  border-top-right-radius: calc(100vw * 150 /1920);
+  border-bottom-right-radius: calc(100vw * 150 /1920);
+  height: calc(100vw * 300 / 1920);
+  transform: rotate(45deg);
+  background-color: #fff;
+  top: calc(100vw * -318 / 1920);
+  right: calc(100vw * -133 / 1920);
+}
 @keyframes arrowMove {
   0% {
     right: 105%;
@@ -212,7 +223,7 @@ header #gnb a,
 }
 #mainIntro #introLogoBox {
   width: 100%;
-  height: calc(100vw * 950 / 1920);
+  height: calc(100vw * 1080 / 1920);
   background-image: url("../img/main.png");
   background-size: cover;
 }
