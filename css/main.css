@@ -733,11 +733,12 @@ article .logo {
 
 #planning .main3 #personaContainer .personaBox ul[class^=persona0] {
   width: calc(100vw * 308 / 1920);
-  height: calc(100vw * 644 / 1920);
+  height: calc(100vw * 503 / 1920);
   display: inline-block;
   margin: 0 calc(100vw * 56 / 1920);
   background-size: cover;
-  padding: calc(100vw * 210 / 1920) 0 0 calc(100vw * 30 / 1920);
+  padding: calc(100vw * 60 / 1920) 0 0 calc(100vw * 30 / 1920);
+  border-radius: calc(100vw * 15 / 1920);
 }
 
 #planning .main3 #personaContainer .personaBox .persona01 {
@@ -772,7 +773,7 @@ article .logo {
 
 #planning .main3 #personaContainer .personaBox ul[class^=persona0] li:nth-child(3) {
   display: inline-block;
-  padding: 2% 6%;
+  padding: calc(100vw * 5 / 1920) calc(100vw * 15 / 1920);
   border-radius: calc(100vw * 20 / 1920);
   position: relative;
   top: calc(100vw * -5 / 1920);
