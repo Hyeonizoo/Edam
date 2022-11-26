@@ -276,6 +276,9 @@ article .logo {
 }
 
 /* Planning --------------------------------------------- Background2 */
+#planning .background2 {
+  position: relative;
+}
 #planning .background2 div[class^=bubble] {
   background-size: cover;
   position: relative;
@@ -348,14 +351,47 @@ article .logo {
   text-align: center;
 }
 
+#planning .background2 .popUp {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vw * 1080 / 1920);
+  top: calc(100vw * 0 / 1920);
+  font-size: calc(100vw * 28 / 1920);
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid var(--beige);
+  background-image: url("../img/letter.jpg");
+  background-size: cover;
+  z-index: 1;
+  cursor: pointer;
+}
+#planning .background2 .popUp .department {
+  position: relative;
+  top: calc(100vw * 415 / 1920);
+  right: calc(100vw * 230 / 1920);
+}
+#planning .background2 .popUp .rank {
+  position: relative;
+  top: calc(100vw * 495 / 1920);
+  right: calc(100vw * 230 / 1920);
+}
+#planning .background2 .popUp #name {
+  position: relative;
+  top: calc(100vw * 348 / 1920);
+  left: calc(100vw * 510 / 1920);
+}
+#planning .background2 .popUp .date {
+  position: relative;
+  top: calc(100vw * 430 / 1920);
+  left: calc(100vw * 510 / 1920);
+}
+
 /* Planning --------------------------------------------- Background3 */
 #planning .background3 #graphBox01 {
   width: calc(100vw * 1380 / 1920);
   height: calc(100vw * 586 / 1920);
 }
-#planning .background3,
-.background4,
-.background5 {
+#planning .background3, .background4, .background5 {
   background-color: #fbfbfb;
 }
 
